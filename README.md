@@ -1,4 +1,4 @@
-# eslint-plugin-cakes
+# eslint-plugin-cakes [![Build Status](https://travis-ci.org/northerncodemky/eslint-plugin-cakes.svg?branch=master)](https://travis-ci.org/northerncodemky/eslint-plugin-cakes)
 
 Provides an ESLint environment for working with Cakes BDD specs
 
