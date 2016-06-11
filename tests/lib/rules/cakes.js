@@ -25,7 +25,7 @@ describe('Cakes rules', () => {
         ];
         expectedGlobals.forEach((glob) => {
           describe(glob, () => {
-            it(`should export ${glob} as a global`, () => {
+            it(`should define ${glob} as a global`, () => {
               env.globals.should.have.ownProperty(glob);
             });
 
@@ -33,6 +33,9 @@ describe('Cakes rules', () => {
               env.globals[glob].should.be.false;
             });
           });
+        });
+        it('should not define any unexpected globals', () => {
+          Object.keys(env.globals).sort().should.deep.equal(expectedGlobals.sort());
         });
       });
     });
