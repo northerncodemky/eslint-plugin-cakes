@@ -17,7 +17,8 @@
   },
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha tests --recursive"
+    "test": "mocha tests --recursive",
+    "lint": "eslint --config ./.eslint.json"
   },
   "dependencies": {
     "requireindex": "~1.1.0"
